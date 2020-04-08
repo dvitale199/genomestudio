@@ -15,7 +15,7 @@ where `<local data dir>` is a local directory containing all idats, cluster and 
 #### gencall works as follows:
 `/home/iaap-cli-linux-x64-1.1.0-sha.80d7e5b3d9c1fdfc2e99b472a90652fd3848bbc7/iaap-cli/iaap-cli gencall <manifest (.bpm)> <clusterfile (.egt)> <output dir> -f <path/to/idats/> -p` 
 
-`-p` to make .ped output used in this run. use <-g> to make .gtc output
+`-p` to make .ped output used in this run. (use `-g` to make .gtc output)
 
 `--rm` removes container after run is complete
 
