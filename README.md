@@ -1,7 +1,7 @@
 # genomestudio
 A few methods of using Illumina's Genome Studio for genotype calling
 
-## Run with docker
+# Run with docker
 #### docker image can be build as follows
 ```cd docker
 docker build --tag genomestudio .
@@ -24,5 +24,20 @@ where `<local data dir>` is a local directory containing all idats, cluster and 
 #### Docker Example
 `docker run --rm -v /Users/vitaled2/Desktop/genome_studio/ilmnTestData:/mnt genomestudio /home/iaap-cli-linux-x64-1.1.0-sha.80d7e5b3d9c1fdfc2e99b472a90652fd3848bbc7/iaap-cli/iaap-cli gencall /mnt/Manifest_cluster_files/GSA-24v3-0_A2.bpm /mnt/Manifest_cluster_files/GSA-24v3-0_A1_ClusterFile.egt /mnt/output -f /mnt/204118120034/ -p`
 
+# Local Genome Studio CLI Parallel processing python script
+#### This parallelizes runs for different sets of idats with same cluster/manifest
+
+`genome_studio_multi_caller.py --idats /data/vitaled2/genomestudio/idat_paths.txt \
+--egt /data/vitaled2/genomestudio/GSAv3Demo/Manifest_cluster_files/GSA-24v3-0_A1_ClusterFile.egt \
+--bpm /data/vitaled2/genomestudio/GSAv3Demo/Manifest_cluster_files/GSA-24v3-0_A2.bpm \
+--out /data/vitaled2/genomestudio/output`
+
+#### idat_paths.txt is just a text file with a different path to different sets of idats (must be from same chip-- i.e. same manifest and clusterfile). it looks like this:
+```
+*idat_paths.txt*
+
+/path/to/idats1/
+/path/to/idats2/
+```
 
 
