@@ -26,6 +26,7 @@ where `<local data dir>` is a local directory containing all idats, cluster and 
 
 # Local Genome Studio CLI Parallel processing python script
 #### This parallelizes runs for different sets of idats with same cluster/manifest
+#### Run like this:
 
 `genome_studio_multi_caller.py --idats /data/vitaled2/genomestudio/idat_paths.txt \
 --egt /data/vitaled2/genomestudio/GSAv3Demo/Manifest_cluster_files/GSA-24v3-0_A1_ClusterFile.egt \
