@@ -34,7 +34,7 @@ where `<local data dir>` is a local directory containing all idats, cluster and 
 
 #### idat_paths.txt is just a text file with a different path to different sets of idats (must be from same chip-- i.e. same manifest and clusterfile). it looks like this:
 ```
-*idat_paths.txt*
+idat_paths.txt
 
 /path/to/idats1/
 /path/to/idats2/
