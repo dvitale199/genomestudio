@@ -3,7 +3,8 @@ A few methods of using Illumina's Genome Studio for genotype calling
 
 # Run with docker
 #### docker image can be built as follows
-```cd docker
+```
+cd docker
 docker build --tag genomestudio .
 ```
 
